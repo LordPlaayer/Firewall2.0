@@ -7,7 +7,7 @@ const token = process.env.BOT_TOKEN;
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('Programando FiveM')
+  client.user.setActivity('Protegiendo')
 });
 
 client.on("message", message => {
