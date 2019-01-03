@@ -7,7 +7,6 @@ exports.run = (client, message, args, level) => {
   .setTitle("Dato:")
   .setColor("#5599ff")
   .setDescription(`Mi creador es **LordPlaayer#6030**`)
-  .addField("", "", true)
   .setFooter(`${message.author.username}`, `${message.author.avatarURL}`)
 
   message.channel.send({embed})
