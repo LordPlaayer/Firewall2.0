@@ -4,14 +4,14 @@ exports.run = (client, message, args, level) => {
   message.delete()
 
   const embed = new Discord.RichEmbed()
-  .setTitle("Dato:")
-  .setColor("#5599ff")
-  .setDescription(`Mi creador es **LordPlaayer#6030**`)
+  .setTitle("Creador:")
+  .setColor("#FFB600")
+  .setDescription(`Soy un BOT programado por **LordPlaayer#1337**`)
   .setFooter(`${message.author.username}`, `${message.author.avatarURL}`)
 
   message.channel.send({embed})
   .then(msg => {
-    msg.react('👍')
+    msg.react('💖')
   })
   .catch(() => console.error('Emoji failed to react.'));
 
