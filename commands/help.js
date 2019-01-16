@@ -4,14 +4,12 @@ exports.run = (client, message, args, level) => {
   message.delete()
 
   const embed = new Discord.RichEmbed()
-  .setTitle("Estado del Servidor:")
-  .setColor("#00E8FF")
-  .setDescription(`
-**Mis Comandos**
-!!creador
-!!fundadores
-!!estadofivem
-!!avances`)
- message.channel.send({embed})
-})
+  .setTitle("Comandos de Firewall Games:")
+  .setColor("#FFB600")
+  .setDescription(`**Mis Comandos** !!creador !!fundadores !!estadofivem !help !!avances`)
+
+  message.channel.send({embed})
+  })
+  .catch(() => console.error('Emoji failed to react.'));
+
 }
