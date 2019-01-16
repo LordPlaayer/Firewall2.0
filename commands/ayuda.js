@@ -9,6 +9,8 @@ exports.run = (client, message, args, level) => {
   .setDescription(`**Mis Comandos** !!creador !!fundadores !!estadofivem !help !!avances`)
 
   message.channel.send({embed})
+  .then(msg => {
+    msg.react('💖')
   })
   .catch(() => console.error('Emoji failed to react.'));
 
