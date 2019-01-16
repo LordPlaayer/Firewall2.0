@@ -6,7 +6,13 @@ exports.run = (client, message, args, level) => {
   const embed = new Discord.RichEmbed()
   .setTitle("Comandos de Firewall Games:")
   .setColor("#FFB600")
-  .setDescription(`**Mis Comandos** !!creador !!fundadores !!estadofivem !help !!avances`)
+  .setDescription(`**Mis Comandos :** 
+  .setDescription !!creador
+  .setDescription !!avances
+  .setDescription !!fundadores 
+  .setDescription !!estadofivem
+  .setDescription **Otros Comandos :** `)
+  .setDescription !help
 
   message.channel.send({embed})
   .then(msg => {
