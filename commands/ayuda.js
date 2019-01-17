@@ -7,13 +7,21 @@ exports.run = (client, message, args, level) => {
   .setTitle("Comandos de Firewall Games:")
   .setColor("#FFB600")
   .addField("Mis Comandos:\n" +
-                                  "**!!creador**\n" +
-                                  "*Te enseña quien es mi creador*\n" +
-                                  "__**2.**__ !!avances \n" +
-                                  "__**3.**__ !!fundadores\n" +
-                                  "__**4.**__ !!estadofivem \n" +
-                                  "Otros Comandos\n" +
-                                  "__**5.**__ !!help\n", true)
+                                  "!!creador \n" +
+                                  "*Te enseño quien es mi creador* \n" +
+                                  "\n" +
+                                  "!!avances \n" +
+                                  "*Aqui salen mis actualizaciones (No disponible)* \n" +
+                                  "\n" +
+                                  "!!fundadores\n" +
+                                  "*Te enseño quienes son los CEO de Firewall Games* \n" +
+                                  "\n" +
+                                  "!!estadofivem \n" +
+                                  "*Te enseño el Trello de como va el servidor* \n" +
+                                  "\n" +
+                                  "Otros Bots\n" +
+                                  "!!help \n", true)
+                                  "\n" +
 
   message.channel.send({embed})
 
