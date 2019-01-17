@@ -6,15 +6,14 @@ exports.run = (client, message, args, level) => {
   const embed = new Discord.RichEmbed()
   .setTitle("Comandos de Firewall Games:")
   .setColor("#FFB600")
-  .setDescription(`**Mis Comandos :** `)
-  .addField(`!!creador `, ``)
-  .addField(`!!avances `, ``)
-  .addField(`!!fundadores  `, ``)
-  .addField(`!!estadofivem `, ``)
-  .addField(`**Otros Comandos :** `, ``)
-  .addField(`!help `, ``)
+  .addField("Mis Comandos:", "---------------------------------------------------------------------------------------\n" +
+                                  "__**1.**__ !!creador\n" +
+                                  "__**2.**__ !!avances \n" +
+                                  "__**3.**__ !!fundadores\n" +
+                                  "__**4.**__ !!estadofivem \n" +
+                                  "Otros Comandos\n" +
+                                  "__**5.**__ !!help\n", true)
 
   message.channel.send({embed})
-  .catch(() => console.error('Emoji failed to react.'));
 
 }
