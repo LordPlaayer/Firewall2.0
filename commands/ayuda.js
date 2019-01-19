@@ -8,19 +8,14 @@ exports.run = (client, message, args, level) => {
   .addField("Mis Comandos:\n" +
                                   "!!creador \n" +
                                   "**Te enseño quien es mi creador** \n" +
-                                  "\n" +
                                   "!!avances \n" +
-                                  "**Aqui salen mis actualizaciones (No disponible)** \n" +
-                                  "\n" +
-                                  "!!fundadores\n" +
+                                  "**Aqui salen mis actualizaciones (No disponible)** \n" , true)
+  .addField("!!fundadores\n" +
                                   "**Te enseño quienes son los CEO de Firewall Games**\n" +
-                                  "\n" +
                                   "!!estadofivem \n" +
                                   "**Te enseño el Trello de como va el servidor**\n" +
-                                  "\n" +
                                   "Otros Bots\n" +
-                                  "!!help \n" +
-                                  "\n" , true)
+                                  "!!help \n", true)
   .setColor("#FFB600")
   message.channel.send({embed})
 
